@@ -9,17 +9,7 @@
   left: 15%;
   bottom: auto;
 }
-.domm {
-  top: 0;
-  bottom: auto;
-  width: 500px;
-  z-index: 40;
-  color: red;
-  text-align: center;
-  top: 30%;
-  left: 50%;
-  bottom: auto;
-}
+
 img {
   width: 300px;
   height: 500px;
