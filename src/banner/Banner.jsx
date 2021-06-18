@@ -1,7 +1,10 @@
 import React from "react";
 import Banner1 from "../images/banner1.png";
-import Banner2 from "../images/banner2.png";
-import Banner3 from "../images/banner3.png";
+import { Carousel } from "react-bootstrap";
+import Image1 from "../images/image1.jpg";
+import Image2 from "../images/images.jpg";
+import "./Banner.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Banner = () => {
   return (
@@ -32,54 +35,30 @@ const Banner = () => {
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button>
+            ></button>{" "}
           </div>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src={Banner1} class="d-block w-100" alt="..." />{" "}
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src={Banner2} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>{" "}
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src={Banner3} class="d-block w-100" alt="..." />
+          <Carousel fade pause="hover">
+            <Carousel.Item interval={2000}>
+              <img className="d-block w-100" src={Banner1} alt="First slide" />{" "}
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+              <img className="d-block w-100" src={Image1} alt="Second slide" />
+            </Carousel.Item>
+            <Carousel.Item interval={2000}>
+              <img className="d-block w-100" src={Image2} alt="Third slide" />
+              <Carousel.Caption className="dom">
+                <h3>Connecting all your banking needs</h3>
 
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+                <a
+                  href="https://alister-bank.cmsmasters.net/services/ "
+                  className="btn btn-danger"
+                >
+                  Find out more
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </header>
     </div>
