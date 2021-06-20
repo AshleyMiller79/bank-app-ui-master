@@ -10,7 +10,6 @@
   left: 15%;
   border-radius: 20px;
 }
-<<<<<<< HEAD
 .pam {
   top: 40%;
   right: 15%;
@@ -20,9 +19,6 @@
   top: 30%;
   left: 5%;
 }
-=======
-
->>>>>>> 0563e8c0940a7d3d9cba2b47a02be33ce2679ca0
 img {
   width: 300px;
   height: 500px;
@@ -30,8 +26,7 @@ img {
 }
 .kap h3,
 .ist h3,
-.pam h3,
-.ant h3 {
+.pam h3 .ant h3 {
   color: rgb(46, 168, 238);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
