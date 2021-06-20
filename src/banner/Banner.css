@@ -1,30 +1,46 @@
-.dom {
+.ist,
+.kap,
+.pam,
+.ant {
   top: 0;
   bottom: auto;
   width: 200px;
-  z-index: 10;
-  color: red;
-  text-align: center;
-  top: 50%;
+  text-align: right;
+  top: 10%;
   left: 15%;
-  bottom: auto;
+  border-radius: 20px;
 }
-.domm {
-  top: 0;
-  bottom: auto;
-  width: 500px;
-  z-index: 40;
-  color: red;
-  text-align: center;
+.pam {
+  top: 40%;
+  right: 15%;
+}
+.ant {
+  width: 400px;
   top: 30%;
-  left: 50%;
-  bottom: auto;
+  left: 5%;
 }
 img {
   width: 300px;
   height: 500px;
+  pointer-events: none;
 }
-h3 {
+.kap h3,
+.ist h3,
+.pam h3,
+.ant h3 {
+  color: rgb(46, 168, 238);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.ist h3 {
+  color: black;
+}
+.pam h3 {
+  color: orangered;
+}
+.ant h3 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-indicators button {
+  border-radius: 300px;
 }
